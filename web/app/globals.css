@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark-first, after the sportsbook mock: ink background, graphite surfaces, pale "sheet"
+   match cards, one lime accent. Win/lose cards use soft green/rose sheets. */
+@layer base {
+  :root {
+    --background: 80 8% 95%;
+    --foreground: 240 6% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 8%;
+    --sheet: 216 22% 91%;
+    --sheet-foreground: 240 6% 10%;
+    --primary: 72 86% 55%;
+    --primary-foreground: 240 6% 8%;
+    --hi: 72 90% 26%;
+    --secondary: 80 6% 90%;
+    --secondary-foreground: 240 6% 10%;
+    --muted: 80 6% 90%;
+    --muted-foreground: 240 4% 40%;
+    --accent: 72 70% 88%;
+    --accent-foreground: 72 90% 20%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 80 6% 84%;
+    --input: 80 6% 84%;
+    --ring: 72 86% 45%;
+    --good: 135 55% 32%;
+    --warn: 36 95% 34%;
+    --value: 263 48% 48%;
+    --win: 110 34% 84%;
+    --lose: 0 38% 86%;
+    --radius: 1.25rem;
+  }
+  .dark {
+    --background: 240 5% 5%;
+    --foreground: 0 0% 96%;
+    --card: 240 3% 11%;
+    --card-foreground: 0 0% 96%;
+    --sheet: 216 22% 89%;
+    --sheet-foreground: 240 6% 10%;
+    --primary: 72 86% 58%;
+    --primary-foreground: 240 6% 6%;
+    --hi: 72 86% 62%;
+    --secondary: 240 3% 16%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 240 3% 16%;
+    --muted-foreground: 240 4% 62%;
+    --accent: 72 40% 16%;
+    --accent-foreground: 72 86% 70%;
+    --destructive: 0 70% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 3% 20%;
+    --input: 240 3% 20%;
+    --ring: 72 86% 58%;
+    --good: 135 60% 62%;
+    --warn: 39 80% 60%;
+    --value: 262 72% 77%;
+    --win: 110 34% 82%;
+    --lose: 0 38% 84%;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  h1, h2, h3, .font-num { @apply font-display; }
+  .font-num { font-variant-numeric: tabular-nums; }
+}

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated data (re-created by `python -m jakita predict / research / results`)
+data/raw/
+data/icons/
+data/predictions/
+data/bets.json
+data/results.json
+data/performance.json
+data/calibration.json
+reports/
+
+# Web
+web/node_modules/
+web/.next/
+web/next-env.d.ts
+web/*.tsbuildinfo
+
+# Secrets / local
+.env
+.env.*
+*.har

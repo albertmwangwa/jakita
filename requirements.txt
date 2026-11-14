@@ -1,0 +1,3 @@
+numpy>=1.26
+requests>=2.31
+anthropic>=1.0  # optional: LLM extraction in `jakita research`
